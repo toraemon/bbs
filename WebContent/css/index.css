@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+body{
+	background: url("../images/back.gif");
+	height: 100%;
+	margin: 0;
+}
+section{
+    background: url("../images/027.jpg");
+    border: 1px solid #DDDDDD;
+    padding: 15px;
+    margin: 30px auto 0px;
+    width: 80%;
+    hithgt: 750px;
+    border-bottom: 15px;
+    -webkit-box-shadow: 0 1px 7px #aaaaaa;
+    box-shadow: 0 1px 7px #aaaaaa;
+    text-align: center;
+}
+footer{
+	margin: 5px auto 0px;
+	width: 80%;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+#loginBtn{
+	font-weight: bold;
+	color: white;
+	padding: 5px;
+	border-style: none;
+	box-shadow: 2px 2px 3px 1px #666;
+	-moz-box-shadow: 2px 2px 3px 1px #666;
+	-webkit-box-shadow: 2px 2px 3px 1px #666;
+	text-shadow: 1px 1px 2px #000;
+	/* グラデーションの指定 */
+    background: -moz-linear-gradient(bottom, #36d, #248 50%, #36d);
+    background: -webkit-gradient(linear, left bottom, left top, from(#36d), color-stop(0.5, #248), to(#36d));
+    margin-bottom: 10px;
+}
+
+#loginBtn:hover {
+    /* 透明度を20%に指定 */
+    opacity: 0.8;
+}
+a{
+	text-decoration: none;
+	color: blue;
+}
+a:hover{
+	color: #ff8800;
+}
+.pic{
+	width: 10px;
+}
+#caution{
+	color: red;
+	font-weight: bold;
+}
+#caution2{
+	color: blue;
+	font-weight: bold;
+}
+/* 電光掲示板 */
+.ledText {
+    overflow: hidden;
+    position: relative;
+    padding:5px 0;
+    color: #FFB400;
+    font-size: 15px;
+    font-weight: bold;
+    background: #333333;
+}
+
+/* CSS3グラデーションでドット感を出す */
+.ledText:after {
+   content: ' ';
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-image: linear-gradient(#0a0600 1px, transparent 0px), linear-gradient(0, #0a0600 1px, transparent 1px);
+	background-image: -webkit-linear-gradient(#0a0600 1px, transparent 0px), -webkit-linear-gradient(0, #0a0600 1px, transparent 1px);
+　　background-size: 2px 2px;
+   z-index: 10;
+}
+
+/* CSS3アニメーションでスクロール */
+.ledText span {
+	display: inline-block;
+	white-space: nowrap;
+	padding-left: 100%;
+	-webkit-animation-name: marquee;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 15s;
+	-moz-animation-name: marquee;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 15s;
+	animation-name: marquee;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 15s;
+}
+
+@-webkit-keyframes marquee {
+  from   { -webkit-transform: translate(0%);}
+  99%,to { -webkit-transform: translate(-100%);}
+}
+@-moz-keyframes marquee {
+  from   { -moz-transform: translate(0%);}
+  99%,to { -moz-transform: translate(-100%);}
+}
+@keyframes marquee {
+  from   { transform: translate(0%);}
+  99%,to { transform: translate(-100%);}
+}

@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.mainSet{
+	table-layout: fixed;
+	width: 70%;
+ }
+th{
+	width: 25%;
+}
+.loginMsg{
+	color: green;
+}
+.titleField{
+	text-align: left;
+}
+.contributor{
+	text-align: right;
+}
